@@ -1,0 +1,38 @@
+<app-header></app-header>
+<div class="app-body">
+  <div class="main ">
+    
+    <div class="menu container" *ngIf="divSelection==0">
+      <div class="" style="margin: 0% 0% 0% 23%;font-size: 44px;" >
+        <div class="row " *ngFor="let submenu of menuItems">
+          <span class="{{submenu.className}}" (click)="changeComponent(submenu.id)">{{submenu.name}}</span>
+        </div>
+      </div>
+    </div>
+    <div id="Home" class="home" *ngIf="divSelection==1">
+      <app-home></app-home>
+    </div>
+    <div *ngIf="divSelection==2" class="about" >
+      <app-about></app-about>
+    </div>
+    <div *ngIf="divSelection==3">
+      <app-services></app-services>
+    </div>
+    <div *ngIf="divSelection==4">
+      <app-brands></app-brands>
+    </div>
+    <div *ngIf="divSelection==5">
+      <app-projects></app-projects>
+    </div>
+    <div *ngIf="divSelection==6">
+      <app-career></app-career>
+    </div>
+    <div *ngIf="divSelection==7">
+      <app-contact></app-contact>
+    </div>
+    <div  class="" >
+      <app-gallery *ngIf="divSelection==8" style="transition: 1.1s;"></app-gallery>
+    </div>
+  </div>
+<app-footer></app-footer>
+</div>

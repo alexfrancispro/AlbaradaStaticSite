@@ -1,0 +1,31 @@
+<div class="brands">
+  <div class="row d-flex justify-content-center">
+    <div class="container m-0 p-0">
+      <div class="row ">
+        <div class="col-md-7 p-0">
+          <div class="row  ">
+            <div class="col-12 text-center">
+              <h1 class="title">Brands we Offer</h1>
+            </div>
+          </div>
+          <div class=" row brand-row align-items-center m-0">
+            <div class="brand-column col-md bg-white d-flex justify-content-center " *ngFor="let brand of brandList;let idx=index;">
+              <img class=" brand-image" src={{brand.url}} (mouseenter)="displayContent=idx" alt="">
+            </div>
+          </div>
+        </div>
+        <div class="col-md-1"></div>
+        <div class="col-md-3 mr-1">
+          <div class="card  h-100">
+            <h2 class="Card-title text-center py-4">
+              {{brandList[displayContent].title}}
+            </h2>
+            <h4 class="card-para px-4">
+              {{brandList[displayContent].description}}
+            </h4>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

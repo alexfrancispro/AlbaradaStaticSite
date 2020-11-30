@@ -1,0 +1,29 @@
+<div class="header container-fluid" >
+      <div class="row">
+        <div class="col d-flex justify-content-end pt-2">
+          <img src="../assets/instagram-brands.svg" class="icons" alt="" >
+          <img src="../assets/facebook-square-brands.svg" class="icons" alt="" >
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-3 ">
+          <div *ngIf="stateChange!=0" class="menu-section d-inline-flex align-items-center" >
+            <img   src="../assets/menu_icon.png" alt="no icon" />
+            <h3 class=""  (click)="changeState('open')">Menu</h3>
+          </div>
+            <div *ngIf="stateChange==0" class="menu-section d-inline-flex align-items-center" >
+              <img class="" src="../assets/menu_icon_minus.png" alt="no icon" />
+            <h3 class="" (click)="changeState('close')">Close</h3>
+          </div>
+        </div>
+        <div class="col-sm-6 nameslip  d-flex align-bottom">
+          <img class="rounded-circle" src="../assets/logo.jpg" alt="t" style="    height: 35px;
+            width: 35px;
+            ">
+            <h3>
+              ALBARADA TECHNICAL SERVICES LLC, DUBAI, UAE
+            </h3>
+        </div>
+      </div>
+      
+    </div>

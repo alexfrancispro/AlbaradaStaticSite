@@ -1,0 +1,38 @@
+.app-body{
+    .main{
+        .menu{
+            // @extend .Header ;
+            .submenu{
+                cursor: pointer;
+            }
+        }
+        .home{
+            .image-shadow{
+                background-color: black;
+            }
+            .carousel-inner{
+                .carousel-item{
+                    .home-image{
+                        background-color: black;
+                        opacity: .5;
+                    }
+                }
+                
+            }
+            .carousel-indicators{
+                display: block;
+                li{
+
+                    height: 16px;
+                    width: 16px;
+                    border-radius: 50%;
+                }
+            }
+        }
+    }
+}
+
+
+
+
+ 
